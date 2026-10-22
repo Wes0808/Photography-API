@@ -15,6 +15,22 @@ nav {
     display: flex;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: wavy;
+}
+
+.nav__link:hover {
+    text-decoration: wavy;
+}
+
+.btn:hover {
+    text-decoration: whitesmoke wavy !important;
+}
+
 ul {
     display: flex;
 }
@@ -39,11 +55,11 @@ li {
 
 .nav__link {
     margin-left: 16px;
-    text-decoration: none;
+    /*text-decoration: none;*/
     font-size: 20px;
     color: darkgreen;
     font-weight: bold;
-    padding: 8px;
+    padding: 12px;
 }
 
 .nav__link--prime {
@@ -59,4 +75,6 @@ li {
     font-size: 20px;
     border-radius: 12px;
     border: none;
+    text-decoration: wavy;
 }
+
