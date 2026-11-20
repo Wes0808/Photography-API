@@ -18,6 +18,22 @@
                         <li><a href="#" class="nav__link">Home</a></li>
                         <li><a class="btn" href="photo.html">Find Your Picture</a></li>
                     </ul>
+                    <button class="btn__menu" onclick="openMenu()">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                    <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="btn btn__menu btn__menu--close" onclick="closeMenu()">Find Your Picture</a>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </nav>
         <header>
@@ -86,10 +102,10 @@
                     <div class="pics">
                         <div class="pic">
                             <figure class="pic__img--wrapper">
-                                <img class="pic__img" src="assets/Jeeps.jpg" alt="">
+                                <img class="pic__img" src="assets/Elks in a River.jpg" alt="">
                             </figure>
                             <div class="pic__title">
-                                Jeeps on the Trail
+                                Elks in a River
                             </div>
                         </div>
                         <div class="pic">
@@ -142,6 +158,3 @@
     </footer>
 </body>
 </html>
-
-
-
