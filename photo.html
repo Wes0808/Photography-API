@@ -1,25 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photos</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/4978939aec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4978939aec.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
     <script src="photo.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <section id="landing">
-        <nav>
-            <div class="nav__container">
-                <img class="thelogo" src="/assets/WB Logo Green.png" alt="Logo">
-                    <ul class="nav__links">
-                        <li><a href="index.html" class="nav__link">Home</a></li>
-                        <li><a class="btn" href="photo.html">Find Your Picture</a></li>
-                    </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="nav__container">
+          <img class="thelogo" src="/assets/WB Logo Green.png" alt="Logo" />
+          <ul class="nav__links">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+           <!---- <li>
+                <button id="search-toggle" type="button" aria-expanded="false" class="btn">
+                    Find Your Picture
+                </button> 
+            </li> -->
+          </ul>
+        </div>
+      </nav>
+      <header>
+        <div class="header__container">
+          <div class="header__desc">
+            <h1>
+              <span class="green">Pexafy</span> has millions of free and paid
+              images
+            </h1>
+            <h2><span class="green">Find an image that works for you</span></h2>
+            <form action="https://pexafy.com/?q= " method="get">
+                <input type="text" name="q" placeholder="Search Pexafy...">
+                <button type="submit"><span class="green2">Search</span></button>
+            </form>
+          </div>
+        </div>
+      </header>
     </section>
-</body>
+  </body>
 </html>

@@ -55,6 +55,20 @@ a:hover {
     color: darkgreen;
 }
 
+.green2 {
+    color: darkorange;
+}
+
+.green2:hover {
+    color: black;
+    background-color: greenyellow;
+}
+
+.orange {
+    color: darkorange;
+    background-color: greenyellow;
+}
+
 h1 {
     font-size: 56px;
     color: darkorange;
@@ -156,6 +170,7 @@ li {
 .menu--open .menu__backdrop {
     visibility: visible;
     opacity: 1;
+    transform: translate(0);
 }
 
 .menu--open {
@@ -358,6 +373,34 @@ footer {
     padding: 0 8px;
 }
 
+form {
+  display: flex;
+  max-width: 400px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: darkgreen;
+  color: bold darkorange;
+  border: 1px solid darkgreen;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+button:hover {
+    color: black bold;
+  background-color: greenyellow;
+}
+
+
 /*
 
 SMALL PHONES, TABLETS & LARGE SMARTPHONES
@@ -369,11 +412,15 @@ SMALL PHONES, TABLETS & LARGE SMARTPHONES
         padding: 0 24px;
     }
     h1 {
-        font-size: 40;
+        font-size: 40px;
     }
 
     h2 {
         font-size: 26px;
+    }
+
+    .btn__menu {
+        display: block;
     }
 
     button {
@@ -383,6 +430,14 @@ SMALL PHONES, TABLETS & LARGE SMARTPHONES
     .pic {
         width: 50%;
     }
+
+    .spotlight {
+    width: 100%;
+}
+
+.spotlight:not(:last-child) {
+    margin-bottom: 24px;
+}
 }
 
 /*
@@ -400,11 +455,5 @@ SMALL PHONES, LARGE SMARTPHONES
     }
 }
 
-/*.spotlight {
-    width: 100%;
-}
 
-.spotlight:not(:last-child) {
-    margin-bottom: 24px;
-}*/
 
